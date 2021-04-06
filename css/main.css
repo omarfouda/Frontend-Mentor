@@ -38,7 +38,7 @@ body {
 .navbar .navbar-list li {
   display: inline-block;
   color: #fff;
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 .navbar .navbar-list li a {
@@ -193,7 +193,7 @@ body {
 
 @media (max-width: 769px) {
   .productive .info div p {
-    font-size: .85rem;
+    font-size: 0.85rem;
   }
 }
 
@@ -207,7 +207,7 @@ body {
 
 @media (max-width: 769px) {
   .productive .info div a {
-    font-size: .85rem;
+    font-size: 0.85rem;
   }
 }
 
@@ -284,7 +284,7 @@ body {
 
 @media (max-width: 769px) {
   .testimonials .testimonial p {
-    font-size: .9rem;
+    font-size: 0.9rem;
   }
 }
 
@@ -390,22 +390,24 @@ body {
   border: none;
   width: 60%;
   outline: none;
+  padding: 0 15px;
+  margin-right: 10px;
 }
 
 .contact-us form input[type="text"]::-webkit-input-placeholder {
-  opacity: .8;
+  opacity: 0.8;
 }
 
 .contact-us form input[type="text"]:-ms-input-placeholder {
-  opacity: .8;
+  opacity: 0.8;
 }
 
 .contact-us form input[type="text"]::-ms-input-placeholder {
-  opacity: .8;
+  opacity: 0.8;
 }
 
 .contact-us form input[type="text"]::placeholder {
-  opacity: .8;
+  opacity: 0.8;
 }
 
 @media (max-width: 769px) {
@@ -416,6 +418,7 @@ body {
     font-size: 14px;
     border: none;
     margin-bottom: 18px;
+    margin-right: 0;
   }
 }
 

@@ -1,0 +1,532 @@
+@font-face {
+  font-family: Raleway;
+  src: url("https://fonts.google.com/specimen/Raleway");
+}
+
+.usual-button, .main-intro button, .contact-us form input[type="submit"] {
+  color: #fff;
+  background-image: -webkit-gradient(linear, left top, right top, from(#65e2d9), to(#339ecc));
+  background-image: linear-gradient(to right, #65e2d9, #339ecc);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 10px 91px;
+  border-radius: 20px;
+  font-size: 17px;
+  border: none;
+  font-weight: bold;
+}
+
+body {
+  font-family: "Open Sans";
+  background-color: #181f2a;
+}
+
+/* - Cyan (inside call-to-action gradient): hsl(176, 68%, 64%)
+- Blue (inside call-to-action gradient): hsl(198, 60%, 50%)
+- Light Red (error): hsl(0, 100%, 63%) */
+/* Start the main nav-bar */
+.navbar {
+  background-color: #1c2431;
+}
+
+.navbar .navbar-list {
+  display: inline-block;
+  margin-top: 15px;
+}
+
+.navbar .navbar-list li {
+  display: inline-block;
+  color: #fff;
+  font-size: .8rem;
+}
+
+.navbar .navbar-list li a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* End the main nav-bar */
+/* Start The Main Intro */
+.main-intro {
+  text-align: center;
+  color: #fff;
+  background-color: #1c2431;
+  position: relative;
+  padding-bottom: 200px;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .main-intro {
+    padding-bottom: 20px;
+  }
+}
+
+.main-intro .upper {
+  position: relative;
+  z-index: 2;
+}
+
+.main-intro svg {
+  position: absolute;
+  bottom: -36px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .main-intro svg {
+    bottom: 0;
+  }
+}
+
+.main-intro img {
+  width: 100%;
+}
+
+.main-intro h3 {
+  font-family: "Raleway", sans-serif;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.main-intro p {
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+}
+
+/* End The Main Intro */
+/* Start The Features Section */
+.features {
+  text-align: center;
+  color: #fff;
+  margin-top: 60px;
+}
+
+@media (max-width: 769px) {
+  .features {
+    margin-top: 120px;
+  }
+}
+
+.features .feat {
+  margin-bottom: 90px;
+}
+
+.features .feat h4 {
+  margin-top: 24px;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.features .feat p {
+  width: 60%;
+  margin: auto;
+}
+
+@media (max-width: 769px) {
+  .features .feat p {
+    width: 100%;
+  }
+}
+
+/* End The Features Section */
+/* Start The productive Section */
+.productive {
+  color: #fff;
+  margin-top: 45px;
+  text-align: left;
+}
+
+.productive .image-holder img {
+  width: 100%;
+}
+
+.productive .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  /* Need @media */
+}
+
+.productive .info div {
+  margin-left: 25px;
+}
+
+@media (max-width: 769px) {
+  .productive .info div {
+    margin-left: 0;
+  }
+}
+
+.productive .info div h3 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 2.7rem;
+}
+
+@media (max-width: 769px) {
+  .productive .info div h3 {
+    font-size: 1.1rem;
+    margin-bottom: 21px;
+    margin-top: 30px;
+  }
+}
+
+.productive .info div p {
+  font-size: 1.3rem;
+  font-family: "Raleway", sans-serif;
+}
+
+@media (max-width: 769px) {
+  .productive .info div p {
+    font-size: .85rem;
+  }
+}
+
+.productive .info div a {
+  text-decoration: none;
+  color: #65e2d9;
+  border-bottom: 1px solid;
+  padding-bottom: 3px;
+  font-size: 1.3rem;
+}
+
+@media (max-width: 769px) {
+  .productive .info div a {
+    font-size: .85rem;
+  }
+}
+
+.productive .info div a::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f138";
+  font-size: 12px;
+  color: cyan;
+  margin-left: 5px;
+}
+
+@media (max-width: 769px) {
+  .productive .info div a::after {
+    font-size: 9px;
+  }
+}
+
+/* End The productive Section */
+/* Start The testimonials Section */
+.testimonials {
+  margin-top: 175px;
+  color: #fff;
+  position: relative;
+  margin-bottom: -125px;
+}
+
+@media (max-width: 769px) {
+  .testimonials {
+    margin-top: 160px;
+    margin-bottom: -50px;
+  }
+}
+
+.testimonials .img-holder {
+  height: 55px;
+  width: 45px;
+  position: absolute;
+  top: -35px;
+  left: 5px;
+  z-index: -1;
+}
+
+@media (max-width: 769px) {
+  .testimonials .img-holder {
+    height: 35px;
+    width: 25px;
+    top: -21px;
+    left: 17px;
+  }
+}
+
+.testimonials .img-holder img {
+  width: 100%;
+}
+
+.testimonials .testimonial {
+  background-color: #202a3c;
+  padding: 2.2rem;
+  border-radius: 4px;
+  margin-bottom: 35px;
+}
+
+@media (max-width: 769px) {
+  .testimonials .testimonial {
+    padding: 1.5rem;
+  }
+}
+
+.testimonials .testimonial p {
+  font-size: 1.2rem;
+  margin-bottom: 1.7rem;
+}
+
+@media (max-width: 769px) {
+  .testimonials .testimonial p {
+    font-size: .9rem;
+  }
+}
+
+.testimonials .testimonial .user-info .user-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: inline-block;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+@media (max-width: 769px) {
+  .testimonials .testimonial .user-info .user-image {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.testimonials .testimonial .user-info .user-image img {
+  width: 100%;
+  padding: 1px;
+  border-radius: 50%;
+}
+
+.testimonials .testimonial .user-info .infos {
+  display: inline-block;
+  width: auto;
+  margin-left: 15px;
+  vertical-align: middle;
+}
+
+.testimonials .testimonial .user-info .infos .user-name {
+  margin-bottom: -6px;
+  font-size: 15px;
+}
+
+@media (max-width: 769px) {
+  .testimonials .testimonial .user-info .infos .user-name {
+    font-size: 12px;
+  }
+}
+
+.testimonials .testimonial .user-info .infos .user-title {
+  opacity: 0.7;
+  font-size: 13px;
+}
+
+@media (max-width: 769px) {
+  .testimonials .testimonial .user-info .infos .user-title {
+    font-size: 11px;
+  }
+}
+
+/* End The testimonials Section */
+/* Start The Contact Section */
+.contact-us {
+  margin-top: 100px;
+  background-color: #1c2230;
+  padding: 35px 45px;
+  color: #fff;
+  text-align: center;
+  border-radius: 10px;
+  position: relative;
+  top: 155px;
+}
+
+@media (max-width: 769px) {
+  .contact-us {
+    margin-top: 0;
+    padding: 20px;
+  }
+}
+
+.contact-us h3 {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+}
+
+.contact-us p {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-family: "Raleway", sans-serif;
+}
+
+.contact-us form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+@media (max-width: 769px) {
+  .contact-us form {
+    display: block;
+  }
+}
+
+.contact-us form input[type="text"] {
+  border-radius: 25px;
+  border: none;
+  width: 60%;
+  outline: none;
+}
+
+.contact-us form input[type="text"]::-webkit-input-placeholder {
+  opacity: .8;
+}
+
+.contact-us form input[type="text"]:-ms-input-placeholder {
+  opacity: .8;
+}
+
+.contact-us form input[type="text"]::-ms-input-placeholder {
+  opacity: .8;
+}
+
+.contact-us form input[type="text"]::placeholder {
+  opacity: .8;
+}
+
+@media (max-width: 769px) {
+  .contact-us form input[type="text"] {
+    width: 100%;
+    padding: 8px 26px;
+    border-radius: 20px;
+    font-size: 14px;
+    border: none;
+    margin-bottom: 18px;
+  }
+}
+
+.contact-us form input[type="submit"] {
+  padding: 7px 33px;
+}
+
+@media (max-width: 769px) {
+  .contact-us form input[type="submit"] {
+    width: 100%;
+    padding: 7px 0;
+    border-radius: 20px;
+    font-size: 17px;
+    border: none;
+    font-weight: bold;
+  }
+}
+
+/* End The Contact Section */
+/* Start The Footer Section */
+footer:first-of-type {
+  color: #fff;
+  padding-top: 150px;
+  /* Need @media */
+  padding-bottom: 50px;
+  /* Need @media */
+  background-color: #0b1523;
+  margin-top: 50px;
+}
+
+@media (max-width: 769px) {
+  footer:first-of-type {
+    margin-top: 0;
+    padding-top: 200px;
+    padding-bottom: 15px;
+  }
+}
+
+footer:first-of-type .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer:first-of-type .info i {
+  margin-top: 6px;
+}
+
+footer:first-of-type .info p {
+  display: inline-block;
+  width: 80%;
+  margin: auto;
+}
+
+footer:first-of-type .contacts .contact {
+  margin-bottom: 15px;
+}
+
+footer:first-of-type .contacts .contact span {
+  margin-left: 10px;
+  font-size: 12px;
+}
+
+footer:first-of-type .cust-list {
+  display: inline-block;
+}
+
+footer:first-of-type .cust-list li {
+  margin-bottom: 15px;
+}
+
+footer:first-of-type .cust-list li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+footer:first-of-type .social-media li {
+  display: inline-block;
+  margin-right: 7px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  height: 30px;
+  width: 30px;
+  padding: 4px;
+  text-align: center;
+}
+
+footer:first-of-type .social-media li a {
+  color: #fff;
+}
+
+/* End The Footer Section */
+/* Start My Footer Section */
+footer:last-of-type {
+  color: #fff;
+  background-color: #0b1523;
+  margin-top: 2px;
+  text-align: center;
+  padding: 10px;
+}
+
+footer:last-of-type p {
+  margin: 5px;
+}
+
+footer:last-of-type p a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* End My Footer Section */

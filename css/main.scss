@@ -31,10 +31,14 @@ body {
 /* Start the main nav-bar */
 .navbar {
   background-color: $intro-bkgd-color;
+  .navbar-brand{
+    img{
+      width: 135px;
+    }
+  }
   .navbar-list {
     display: inline-block;
     margin-top: 15px;
-
     li {
       display: inline-block;
       color: #fff;

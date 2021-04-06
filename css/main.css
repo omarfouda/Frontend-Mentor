@@ -30,6 +30,10 @@ body {
   background-color: #1c2431;
 }
 
+.navbar .navbar-brand img {
+  width: 135px;
+}
+
 .navbar .navbar-list {
   display: inline-block;
   margin-top: 15px;
